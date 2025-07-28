@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./output.css">
+  <script src="./script.js" defer></script>
+  <title>Forest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-verde-800 font-sans">
+  <div class="container mt-4 flex justify-center md:justify-start">
+    <div class="inline-flex items-center rounded-md bg-verde-900">
+      <span class="size-2 block neon relative -left-1"></span>
+      <div class="flex text-verde-300 divide-x-2 divide-verde-800 *:py-2 *:px-4">
+        <div class="capitalize" id="dia">Segunda</div>
+        <div id="temperatura">28º</div>
+        <div id="tempo">🌤️</div>
+      </div>
+    </div>
+  </div>
+  <header class="container py-8 flex gap-8 items-center justify-between">
+    <a href="#" class="font-serif text-"><img src="./img/forest.svg" alt="Logo Forest"></a>
+    <nav id="mobile-menu" class="hidden items-center lg:block max-lg:fixed max-lg:inset-0 max-lg:w-full z-40">
+      <div class="fixed inset-0 bg-verde-950/40 backdrop-blur-md lg:hidden"></div>
+      <ul class="text-xl text-white z-50 lg:flex lg:flex-wrap lg:gap-8 max-lg:absolute max-lg:w-full max-lg:p-8 max-lg:text-2xl max-lg:divide-y-2 max-lg:divide-white/10">
+        <li class="animate-slide-in opacity-0">
+          <a href="#acomodacoes" class="block p-4 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8 max-lg:hover:bg-white/10">Acomodações</a>
+        </li>
+        <li class="animate-slide-in opacity-0 animate-1">
+          <a href="#eventos" class="block p-4 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8 max-lg:hover:bg-white/10">Eventos</a>
+        </li>
+        <li class="animate-slide-in opacity-0 animate-2">
+          <a href="#experiencias" class="block p-4 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8 max-lg:hover:bg-white/10">Experiências</a>
+        </li>
+        <li class="animate-slide-in opacity-0 animate-3">
+          <a href="#contato" class="block p-4 lg:px-0 lg:py-2 lg:hover:underline lg:hover:underline-offset-8 max-lg:hover:bg-white/10">Contato</a>
+        </li>
+      </ul>
+    </nav>
+    <button id="mobile-btn" class="flex items-center gap-3 btn py-2 lg:hidden">Menu
+      <span class="w-4 h-3 flex flex-col justify-between *:w-4 *:h-0.5 *:rounded-md *:bg-verde-800">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </header>
+
+  <main class="container">
+    <div class="relative pt-64 pb-8 px-8 bg-gradient-to-t from-verde-950/80 text-white rounded-3xl overflow-hidden max-sm:pt-10 max-sm:px-4">
+      <video src="./img/video_chuva.mp4" width="1280" height="720" muted autoplay playsinline loop id="video" class="absolute size-full inset-0 object-cover -z-10 animate-fade-in"></video>
+      <div class="py-1 pr-1 pl-4 mb-8 inline-flex gap-8 items-center justify-between bg-verde-950 rounded-full max-sm:flex max-sm:flex-col max-sm:items-start max-sm:gap-2 max-sm:p-4 max-sm:rounded-2xl max-sm:bg-verde-950/60">
+        vagas para dezembro abertas
+        <a href="./" class="inline-flex items-center gap-2 btn">Reserve Hoje
+          <img src="./img/seta.svg" alt="">
+        </a>
+      </div>
+      <h1 class="font-serif max-w-screen-sm text-5xl text-balance capitalize mb-20 max-sm:text-4xl max-sm:mb-8">Venha experimentar a vida na floresta</h1>
+      <div class="flex gap-8 justify-between items-end text-sm max-sm:flex-col max-sm:gap-0 max-sm:items-start">
+        <p class="max-sm:mb-4">Melhores locais para visitar
+          <a href="./" class="underline underline-offset-4 decoration-2 hover:no-underline">2049</a>
+        </p>
+        <div>
+          <p class="uppercase mb-2">Recomendado por</p>
+          <p class="flex gap-4 items-center">
+            <img src="./img/parceiros/wildbeast.svg" alt="Logo Wildbeast" class="w-28">
+            <span>|</span>
+            Revista Nacional
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="acomodacoes" class="container pt-16 mb-16 grid grid-cols-[2fr_3fr] gap-8 radial-gradient max-lg:grid-cols-1 max-sm:mb-12">
+    <div class="bg-[url('./img/padrao.svg')] bg-no-repeat bg-contain bg-left-bottom content-end">
+      <h1 class="font-serif text-5xl text-white mb-8 max-lg:text-4xl">Refúgio Natural</h1>
+      <ul class="grid gap-4 text-xl text-gray-200 *:flex *:items-center *:gap-4 max-sm:text-[1rem]">
+        <li>
+          <span class="w-6 h-0.5 neon inline-block"></span>
+          Experimente a natureza de perto
+        </li>
+        <li>
+          <span class="w-6 h-0.5 neon inline-block"></span>
+          Conecte-se com a natureza
+        </li>
+        <li>
+          <span class="w-6 h-0.5 neon inline-block"></span>
+          Desconecte-se do digital
+        </li>
+        <li>
+          <span class="w-6 h-0.5 neon inline-block"></span>
+          Observe a vida selvagem
+        </li>
+        <li>
+          <span class="w-6 h-0.5 neon inline-block"></span>
+          Escolha a sua cabine preferida
+        </li>
+      </ul>
+    </div>
+    <div class="grid grid-cols-[2fr_1fr] gap-8 max-sm:gap-4">
+      <div class="col-span-full grid *:col-start-1 *:row-start-1">
+        <img src="./img/casa1.jpg" alt="Ruby" class="h-52 w-full object-cover rounded-xl">
+        <span class="self-start justify-self-end bg-verde-950/60 text-sm/none text-white uppercase m-2 py-2 px-4 rounded-full">Ruby</span>
+      </div>
+      <div class="grid *:col-start-1 *:row-start-1">
+        <img src="./img/casa2.jpg" alt="Emerald" class="size-full  object-cover rounded-xl">
+        <span class="self-start justify-self-end bg-verde-950/60 text-white uppercase m-2 py-2 px-4 rounded-full">Emerald</span>
+      </div>
+      <div class="grid *:col-start-1 *:row-start-1">
+        <img src="./img/casa3.jpg" alt="Saphire" class="size-full  object-cover rounded-xl">
+        <span class="self-start justify-self-end bg-verde-950/60 text-white uppercase m-2 py-2 px-4 rounded-full">Saphire</span>
+      </div>
+  </section>
+
+  <section id="eventos" class="mb-16 py-16 bg-verde-900 max-sm:mb-12 max-sm:py-12">
+    <div class="container">
+      <p class="text-sm text-center tracking-widest text-verde-200 uppercase mb-4">Conecte-se com a natureza</p>
+      <h2 class="font-serif text-6xl text-center text-balance text-white max-w-screen-md mx-auto mb-8 capitalize max-sm:text-4xl">Cada som, cada momento, uma nova descoberta</h2>
+      <div class="grid grid-cols-[repeat(3,minmax(300px,1fr))] gap-8 overflow-x-auto pb-4 snap-x snap-mandatory max-sm:gap-4 *:snap-center">
+        <div class="grid gap-4 bg-verde-800 p-8 rounded-xl max-sm:p-6">
+          <h3 class="font-serif text-2xl text-verde-300">Lua Nova</h3>
+          <div class="text-white">
+            <p class="font-serif text-5xl">23</p>
+            <p class="text-xl">Março 2049</p>
+          </div>
+          <p class="text-gray-300 text-balance">Melhor período para observação astronômica. O Céu estará claro e as estrelas visíveis.
+          </p>
+          <a href="#contato" class="justify-self-start self-end btn">Reservar 23/03</a>
+        </div>
+        <div class="grid gap-4 bg-verde-800 p-8 rounded-xl max-sm:p-6">
+          <h3 class="font-serif text-2xl text-verde-300">Aurora Boreal</h3>
+          <div class="text-white">
+            <p class="font-serif text-5xl">15</p>
+            <p class="text-xl">Abril 2049</p>
+          </div>
+          <p class="text-gray-300 text-balance">Melhor período para observação da Aurora Boreal, o céu estará iluminado pelas estrelas.
+          </p>
+          <a href="#contato" class="justify-self-start self-end btn">Reservar 15/04</a>
+        </div>
+        <div class="grid gap-4 bg-verde-800 p-8 rounded-xl max-sm:p-6">
+          <h3 class="font-serif text-2xl text-verde-300">Chuva de Meteoros</h3>
+          <div class="text-white">
+            <p class="font-serif text-5xl">18</p>
+            <p class="text-xl">Agosto 2049</p>
+          </div>
+          <p class="text-gray-300 text-balance">Melhor período para observação da Chuva de Meteoros, o céu estará iluminado pelas estrelas.
+          </p>
+          <a href="#contato" class="justify-self-start self-end btn">Reservar 18/08</a>
+        </div>
+      </div>
+  </section>
+
+  <section id="experiencias" class="container grid grid-cols-2 gap-8 mb-16 max-sm:grid-cols-1 max-sm:mb-12">
+    <div class="bg-verde-900 p-8 rounded-xl max-sm:p-6">
+      <p class="text-sm tracking-widest text-verde-200 uppercase mb-4">Experiências Exclusivas</p>
+      <h2 class="font-serif text-5xl text-white capitalize text-balance mb-8 max-sm:text-3xl max-lg:text-4xl">Escolha sua próxima aventura</h2>
+      <div class="flex gap-4 items-center group">
+        <span class="w-6 h-0.5 neon group-hover:w-10 transition-[width]"></span>
+        <h3 class="text-xl text-white capitalize">Observação noturna</h3>
+      </div>
+      <p class="text-gray-400 text-balance pl-10 mb-8">Explore a vida selvagem em seu habitat natural sob as estrelas.</p>
+      <div class="flex gap-4 items-center group">
+        <span class="w-6 h-0.5 neon group-hover:w-10 transition-[width]"></span>
+        <h3 class="text-xl text-white capitalize">Vida selvagem</h3>
+      </div>
+      <p class="text-gray-400 text-balance pl-10 mb-8">Observe a vida selvagem em seu habitat natural.</p>
+      <div class="flex gap-4 items-center group">
+        <span class="w-6 h-0.5 neon group-hover:w-10 transition-[width]"></span>
+        <h3 class="text-xl text-white capitalize">Canoagem</h3>
+      </div>
+      <p class="text-gray-400 text-balance pl-10 mb-8">Conquiste novos horizontes com nossa equipe especializada.</p>
+    </div>
+
+    <div class="grid grid-cols-2 grid-rows-2 gap-4">
+      <div class="relative overflow-hidden rounded-xl cursor-pointer group">
+        <img src="./img/canoagem.jpg" alt="Canoagem" class="size-full object-cover group-hover:scale-110 transition-transform">
+        <div class="absolute inset-0 flex items-end p-4 bg-gradient-to-t from-verde-950/80 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white capitalize">Canoagem</span>
+        </div>
+      </div>
+      <div class="relative row-span-2 overflow-hidden rounded-xl cursor-pointer group">
+        <img src="./img/observacao-noturna.jpg" alt="Observação noturna" class="size-full object-cover group-hover:scale-110 transition-transform">
+        <div class="absolute inset-0 flex items-end p-4 bg-gradient-to-t from-verde-950/80 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white capitalize">Observação noturna</span>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl cursor-pointer group">
+        <img src="./img/vida-selvagem.jpg" alt="Vida selvagem" class="size-full object-cover group-hover:scale-110 transition-transform">
+        <div class="absolute inset-0 flex items-end p-4 bg-gradient-to-t from-verde-950/80 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white capitalize">Vida selvagem</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-16 max-sm:mb-12 sm:py-16 bg-[url('./img/padrao.svg')] bg-contain bg-center bg-no-repeat">
+    <p class="text-sm tracking-widest text-center text-verde-200 uppercase mb-4">Ciclo natural</p>
+    <h2 class="font-serif text-6xl text-center text-white capitalize max-w-screen-md mx-auto mb-8 max-sm:4xl">Ritmo da floresta</h2>
+    <div class="flex gap-8 max-sm:flex-col max-sm:gap-4">
+      <div class="bg-verde-900 flex-1 grid gap-4 p-8 rounded-xl max-sm:p-6 sm:hover:-translate-y-2 transition-transform">
+        <div class="flex justify-center items-center size-10 neon">
+          <img src="./img/manha.svg" alt="">
+        </div>
+        <h3 class="font-serif text-2xl text-white">Amanhecer</h3>
+        <p class="text-gray-400">Desperte com o canto dos pássaros e participe das nossas caminhadas ao ar livre.</p>
+        <span class="text-verde-300">05:40 - 07:00</span>
+      </div>
+      <div class="bg-verde-900 flex-1 grid gap-4 p-8 rounded-xl max-sm:p-6 sm:translate-y-12 sm:hover:translate-y-10 transition-transform">
+        <div class="flex justify-center items-center size-10 neon">
+          <img src="./img/dia.svg" alt="">
+        </div>
+        <h3 class="font-serif text-2xl text-white">Meio-dia</h3>
+        <p class="text-gray-400">Explore nossas trilhas sombreadas e desfrute de um piquenique gourmet na natureza.</p>
+        <span class="text-verde-300">12:00 - 14:00</span>
+      </div>
+      <div class="bg-verde-900 flex-1 grid gap-4 p-8 rounded-xl max-sm:p-6 sm:hover:-translate-y-2 transition-transform">
+        <div class="flex justify-center items-center size-10 neon">
+          <img src="./img/noite.svg" alt="">
+        </div>
+        <h3 class="font-serif text-2xl text-white">Amanhecer</h3>
+        <p class="text-gray-400">Termine seu dia com nossa sessão de observação de estrelas.</p>
+        <span class="text-verde-300">19:00 - 21:00</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="container grid grid-cols-2 gap-8 mb-16 max-lg:grid-cols-1 max-sm:mb-12">
+    <div>
+      <h1 class="font-serif text-4xl text-verde-300 capitalize mb-4">Nossos contatos</h1>
+      <p class="text-gray-200 text-balance mb-8">Tem interesse em passar uma temporada na Forest? Entre em contato com a gente por telefone ou email.</p>
+      <div class="grid gap-4">
+        <div>
+          <span class="neon w-6 h-0.5 inline-block"></span>
+          <h2 class="font-serif text-2xl text-verde-300 mb-2">Base</h2>
+          <p class="text-gray-300">Rua da Mata, 123 - Floresta Nacional - RJ</p>
+        </div>
+        <div>
+          <span class="neon w-6 h-0.5 inline-block"></span>
+          <h2 class="font-serif text-2xl text-verde-300 mb-2">Email</h2>
+          <p class="text-gray-300">contato@forest.com</p>
+        </div>
+        <div>
+          <span class="neon w-6 h-0.5 inline-block"></span>
+          <h2 class="font-serif text-2xl text-verde-300 mb-2">Telefone</h2>
+          <p class="text-gray-300">21 99999-9999</p>
+        </div>
+      </div>
+    </div>
+    <form class="grid gap-4 p-8 bg-verde-900 rounded-xl shadow-2xl max-lg:p-4">
+      <div class="grid gap-1">
+        <label for="nome" class="text-white">Nome</label>
+        <input type="text" id="nome" name="nome" class="input">
+      </div>
+      <div class="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
+        <div class="grid gap-1">
+          <label for="email" class="text-white">Email</label>
+          <input type="text" id="email" name="email" class="input">
+        </div>
+        <div class="grid gap-1">
+          <label for="telefone" class="text-white">Telefone</label>
+          <input type="text" id="telefone" name="telefone" placeholder="(21) 00000-0000" class="input">
+        </div>
+      </div>
+      <div class="grid gap-1">
+        <label for="mensagem" class="text-white">Mensagem</label>
+        <textarea type="text" id="mensagem" name="mensagem" rows="5" class="input resize-none"></textarea>
+      </div>
+      <button class="place-self-start btn">Enviar Email</button>
+    </form>
+  </section>
+
+  <section class="container mb-16 max-sm:mb-12">
+    <ul class="flex gap-8 items-center justify-center content-center border-y-2 border-verde-900 sm:py-8 max-sm:flex-col max-sm:gap-0 max-sm:border-y-0 max-sm:divide-y-2 max-sm:divide-verde-900 *:p-4 *:*:max-h-8">
+      <li><img src="./img/parceiros/caravan.svg" alt=""></li>
+      <li><img src="./img/parceiros/dogs.svg" alt=""></li>
+      <li><img src="./img/parceiros/wildbeast.svg" alt=""></li>
+      <li><img src="./img/parceiros/lescone.svg" alt=""></li>
+      <li><img src="./img/parceiros/surfbot.svg" alt=""></li>
+    </ul>
+  </section>
+
+  <footer class="container pb-8">
+    <div class="bg-verde-900 grid grid-cols-2 gap-8 mb-8 p-12 rounded-2xl max-lg:grid-cols-1 max-sm:p-6">
+      <div class="flex gap-12 max-sm:flex-col max-sm:gap-4">
+        <div>
+          <h3 class="font-serif text-xl text-white mb-4">Endereço</h3>
+          <p class="text-gray-400">
+            Rua da Mata, 123
+            <br>
+            Floresta Nacional
+            <br>
+            Rio de Janeiro, RJ
+          </p>
+        </div>
+        <div>
+          <h3 class="font-serif text-xl text-white mb-4">Contato</h3>
+          <p class="text-gray-400">
+            contato@forest.com
+            <br>
+            +55 21 99999-9999
+          </p>
+        </div>
+      </div>
+      <div class="lg:justify-self-end">
+        <img src="./img/forest.svg" alt="Logo Forest" class="mb-4">
+        <p class="text-gray-400">Conecte-se com a natureza</p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center gap-8 text-sm text-gray-400 max-md:flex-col-reverse max-md:justify-center ">
+      <p>© 2025 Forest. Todos os direitos reservados.</p>
+      <ul class="flex gap-8">
+        <li><a href="#" class="hover:text-verde-300">Instagram</a></li>
+        <li><a href="#" class="hover:text-verde-300">Facebook</a></li>
+        <li><a href="#" class="hover:text-verde-300">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
